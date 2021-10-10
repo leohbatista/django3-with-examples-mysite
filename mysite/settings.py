@@ -128,3 +128,10 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+EMAIL_HOST = 'in-v3.mailjet.com'
+EMAIL_HOST_USER = 'b6a459242ba9c170629a37ece936c083'
+EMAIL_HOST_PASSWORD = '9dd5738f9927812dc1c8280b541f0bd1'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True

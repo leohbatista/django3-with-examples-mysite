@@ -11,4 +11,9 @@
     <div class='post-body'>
         {{ post.body|linebreaks }}
     </div>
+    <p style='text-align: center;'>
+        <a href="{% url 'blog:post_share' post.id %}" class="button">
+            Share this post
+        </a>
+    </p>
 {% endblock content %}

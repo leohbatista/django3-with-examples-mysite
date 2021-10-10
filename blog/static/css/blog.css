@@ -63,14 +63,20 @@ p.date {
     font-style: italic; 
 }
 
-a.button {
-    padding: 0.5rem;
-    border: 1px solid;
-    display: inline-block;
-    border-radius: 1rem;
+input[type=submit].button {
+    color: #c40000;
+    background-color: #fafafa;
 }
 
-a.button:hover {
+a.button, input[type=submit].button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #c40000;
+    display: inline-block;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+
+a.button:hover, input.button:hover {
     color: #fafafa;
     background-color: #aa3636;
 }
@@ -109,26 +115,28 @@ a.back {
 label { 
     float:left;
     clear:both;
-    color:#333;
-    margin-bottom:4px; 
+    color:#111;
+    margin-bottom: 0.5rem; 
 }
-input, textarea { 
-    clear:both;
-    float:left;
-    margin:0 0 10px;
-    background:#ededed;
-    border:0;
-    padding:6px 10px;
-    font-size:12px;
+input[type=text], input[type=email], textarea { 
+    margin: 0 0 1rem;
+    background: #f0f0f0;
+    border: 1px solid #222;
+    padding: 0.5rem 1rem;
 }
-input[type=submit] {
-    font-weight:bold;
-    background:#00abff;
-    color:#fff;
-    padding:10px 20px;
-    font-size:14px;
-    text-transform:uppercase; 
+
+input, textarea {
+    clear: both;
+    float: left;
 }
+
+/* input[type=submit] {
+    padding: 1rem 2rem;
+    border: 1px solid;
+    display: inline-block;
+    border-radius: 1rem;
+} */
+
 .errorlist { 
     color:#cc0033;
     float:left;
